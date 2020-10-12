@@ -4,7 +4,6 @@
 #include "library.h"
 #include "date.h"
 
-
 void date_tester()
 {
     date_t d1 = {1,1,2000},d2={31,12,2000};
@@ -16,6 +15,18 @@ void date_tester()
     printf("Date Difference : %d\n",diff);
 
 }
+
+void sign_in()
+{
+    //check with data base details & compare..
+}
+
+void sign_up()
+{
+    //input user detials..
+   
+}
+
 
 void test()
 {
@@ -34,6 +45,10 @@ int choice;
 
     do
     {
+        printf("\0.Exit");
+        printf("\1.Sign in");
+        printf("\2.Sign up");
+
         switch ( choice )
         {
             
@@ -41,11 +56,11 @@ int choice;
                     exit(0);
             
             case 1:
-                    signup();
+                    signin();
                     break;
 
             case 2: 
-                    signin();
+                    signup();
                     break;
             
         }
